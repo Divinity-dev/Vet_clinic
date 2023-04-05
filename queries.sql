@@ -21,4 +21,5 @@ where date_of_birth > '2022-01-01';
 savepoint anim1;
 update animals set weight_kg = weight_kg*-1;
 rollback to savepoint anim1;
+update animals set weight_kg = weight_kg*(-1) where weight_kg < 0;
 commit;
