@@ -24,11 +24,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [vet_clinic] <a name="about-project"></a>
 
 >This is a data base project for an animal vet store.
 
-**[your_project__name]** is a...
+**[vet_clinic]** is a data base system for a vet clinic detailing the animals, animal owners and vet stores
 
 ## 🛠 Built With <a name="built-with"></a>
 

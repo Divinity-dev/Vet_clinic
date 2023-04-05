@@ -23,3 +23,10 @@ update animals set weight_kg = weight_kg*-1;
 rollback to savepoint anim1;
 update animals set weight_kg = weight_kg*(-1) where weight_kg < 0;
 commit;
+select * from animals;
+select * from animals where escape_attempts = 0;
+select avg ( weight_kg) from animals;
+SELECT neutered, MAX(escape_attempts) as excape_attempts FROM animals GROUP BY neutered;
+SELECT specie, MIN(weight_kg) as minWeight, MAX(weight_kg) as maxWeight FROM animals GROUP BY specie;
+SELECT specie, AVG(escape_attempts) as avgEscapes FROM animals WHERE date_part('year', date_of_birth) 
+BETWEEN 1990 AND 2000 GROUP BY specie;
