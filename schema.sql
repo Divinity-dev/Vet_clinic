@@ -1,8 +1,9 @@
-create table animals (
-id SERIAL PRIMARY KEY,
-name VARCHAR(200) NOT NULL,
-date_of_birth DATE NOT NULL,
-escape_attempts INTEGER NULL,
-neutered BOOLEAN NOT NULL,
-weight_kg DECIMAL NOT NULL
-)
+CREATE TABLE animals(
+id INT GENERATED ALWAYS AS IDENTITY, 
+name VARCHAR(250), 
+date_of_birth DATE, 
+escape_attempts INT, 
+neutered BOOLEAN, 
+weight_kg DECIMAL(5,2), PRIMARY KEY(id));
+ALTER TABLE animals
+ADD COLUMN specie VARCHAR(250);
