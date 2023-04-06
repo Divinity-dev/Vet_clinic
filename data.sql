@@ -1,3 +1,4 @@
+--insert data into animals table
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES('Agumon', '2020-02-03', 0, true, 10.23);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
@@ -20,9 +21,29 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES('Blossom', '1998-08-13', 3, true, 17);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES('Ditto', '2022-05-14', 4, true, 22);
+--begin transaction
 Begin
 update animals set specie = 'digimon' where name like '%mon';
 select * from animals;
 update animals set specie = 'pokemon' where specie is null;
 select * from animals;
 commit
+--insert into owers table
+INSERT INTO owners(full_name, age)VALUES
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+--insert into species table
+INSERT INTO species(name)VALUES
+('Pokemon'),
+('Digimon');
+UPDATE animals SET species_id = '2' WHERE name LIKE '%mon';
+UPDATE animals SET species_id = '1' WHERE species_id IS NULL;
+update animals set owner_id = '1' where name = 'Agumon'
+update animals set owner_id = '2' where name = 'Gabumon' or name = 'Pikachu'
+update animals set owner_id = '3' where name = 'Devimon' or name = 'Plantmon'
+update animals set owner_id = '4' where name = 'Charmander' or name = 'Squirtle' or name = 'Blossom'
+update animals set owner_id = '5' where name = 'Angemon' or name = 'Boarmon'
