@@ -27,3 +27,20 @@ ALTER TABLE animals
   Add COLUMN owner_id int,
   ADD FOREIGN KEY (species_id) REFERENCES species (id),
   ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
+  --create a vets table
+  create table vets(
+id serial primary key,
+name varchar(250) not null,
+age int not null,
+date_of_graduation date not null);
+--create specialization table to joint vets and species
+create table specialization(
+species_id int not null, 
+vets_id int not null
+)
+--create a visits table 
+create table visits(
+animal_id int not null,
+vets_id int not null,
+date_of_visit date not null
+)
