@@ -23,7 +23,6 @@
 
 # 📖 [vet_clinic] <a name="about-project"></a>
 
->This is a data base project for an animal vet store.
 
 **[vet_clinic]** is a data base system for a vet clinic detailing the animals, animal owners and vet stores
 
@@ -31,7 +30,6 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built with PostgreSQL
 
 <details>
 <summary>Database</summary>
@@ -44,7 +42,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[Search filter]**
 - **[Data entry]**
@@ -87,9 +84,11 @@ Clone this repository to your desired folder: https://github.com/Divinity-dev/Ve
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Dashboard]**
+- [ ] **[create animals table]**
+- [ ] **[Query multiple tables]**
+- [ ] **[table for visitors]**
+- [ ] **[Add and join tables for visits]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +107,7 @@ Feel free to check the [issues page](https://github.com/Divinity-dev/Vet_clinic/
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> All contributions to this project are welcomed and can be done through this link
+All contributions to this project are welcomed and can be done through this link
 https://github.com/Divinity-dev/Vet_clinic
 
 
